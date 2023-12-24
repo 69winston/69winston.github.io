@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/download.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase ;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;  
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.projects {
+    overflow-y: auto; /* This enables vertical scrolling if the content is taller than the container */
+    max-height: 80vh; /* Adjust the max-height as needed */
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+
+}
+.project {
+    display: flex; /* Use flexbox to make the projects side by side */
+    justify-content: space-around; /* Adjust spacing between projects */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; 
+}
+.project1 {
+    height: 500px;
+    width: 500px;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+.project1 a {
+    text-decoration: none;
+    color: #fff;
+}
+.project2 {
+    height: 500px;
+    width: 500px;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+}
+.project2 a {
+    text-decoration: none;
+    color: #fff;
+}
