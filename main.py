@@ -4,7 +4,7 @@ from riotwatcher import LolWatcher, ApiError
 
 app = Flask(__name__)
 
-api_key = 'RGAPI-785e9176-52a9-45b4-958e-bd52e97f8867'
+api_key = 'key'
 lol_watcher = LolWatcher(api_key)
 my_region = 'na1'
 
