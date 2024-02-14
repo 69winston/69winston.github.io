@@ -1,0 +1,28 @@
+<!-- lolstats.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoL Stats</title>
+</head>
+<body>
+    <h1>League of Legends Stats</h1>
+    <form method="post" action="/">
+        <label for="summoner_name">Summoner Name:</label>
+        <input type="text" id="summoner_name" name="summoner_name" required>
+        <br>
+        <label>Select Option:</label>
+        <select name="option">
+            <option value="death_count">Death Count</option>
+            <option value="rank">Rank</option>
+        </select>
+        <br>
+        <button type="submit">Search</button>
+    </form>
+    {% if result %}
+        <h2>Result for {{ summoner_name }}:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
